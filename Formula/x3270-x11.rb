@@ -24,6 +24,7 @@ class X3270X11 < Formula
   depends_on "libxpm"
   depends_on "libxt"
   depends_on "mkfontscale" => :build
+  depends_on "bdftopcf" => :build
 
   conflicts_with "x3270", because: "x3270-x11 also provides the same binaries as x3270"
 
