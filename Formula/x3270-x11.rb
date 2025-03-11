@@ -10,8 +10,8 @@ class X3270X11 < Formula
     regex(/href=.*?suite3270[._-]v?(\d+(?:\.\d+)+(?:ga\d+)?)(?:-src)?\.t/i)
   end
 
-  depends_on "openssl@3"
-  depends_on "readline"
+  depends_on "bdftopcf" => :build
+  depends_on "mkfontscale" => :build
   depends_on "fontconfig"
   depends_on "freetype"
   depends_on "libice"
@@ -23,10 +23,8 @@ class X3270X11 < Formula
   depends_on "libxmu"
   depends_on "libxpm"
   depends_on "libxt"
-  depends_on "mkfontscale" => :build
-  depends_on "bdftopcf" => :build
-
-  conflicts_with "x3270", because: "x3270-x11 also provides the same binaries as x3270"
+  depends_on "openssl@3"
+  depends_on "readline"
 
   uses_from_macos "python" => :build
   uses_from_macos "ncurses"
@@ -34,6 +32,8 @@ class X3270X11 < Formula
   on_linux do
     depends_on "tcl-tk@8"
   end
+
+  conflicts_with "x3270", because: "x3270-x11 also provides the same binaries as x3270"
 
   def install
     # Fix to read SOURCE_DATE_EPOCH as an unix timestamp not a date string
