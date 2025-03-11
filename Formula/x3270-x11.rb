@@ -10,6 +10,15 @@ class X3270X11 < Formula
     regex(/href=.*?suite3270[._-]v?(\d+(?:\.\d+)+(?:ga\d+)?)(?:-src)?\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/rfc1459/homebrew-personal/releases/download/x3270-x11-4.4ga5"
+    rebuild 1
+    sha256 arm64_sequoia: "7e60bfe7d06aa65bc5eca1fd789f5209a38acd6854aeae7afffb806dfa6356aa"
+    sha256 arm64_sonoma:  "e832bbb13f878f7331af6ec15c22166b3afbde2f6443be72174e27c59d18a2e3"
+    sha256 ventura:       "f4126a0db2feadd69ecd539a5909f9160daffe12aa986b335609dba0a1c5694f"
+    sha256 x86_64_linux:  "f97f32a0e6dfeba393b36f02f2a22727c7c706e0dd54e8ba77b3b3e3a020eda8"
+  end
+
   depends_on "bdftopcf" => :build
   depends_on "mkfontscale" => :build
   depends_on "fontconfig"
