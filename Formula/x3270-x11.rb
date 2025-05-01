@@ -11,12 +11,11 @@ class X3270X11 < Formula
   end
 
   bottle do
-    root_url "https://github.com/rfc1459/homebrew-personal/releases/download/x3270-x11-4.4ga5"
-    rebuild 1
-    sha256 arm64_sequoia: "7e60bfe7d06aa65bc5eca1fd789f5209a38acd6854aeae7afffb806dfa6356aa"
-    sha256 arm64_sonoma:  "e832bbb13f878f7331af6ec15c22166b3afbde2f6443be72174e27c59d18a2e3"
-    sha256 ventura:       "f4126a0db2feadd69ecd539a5909f9160daffe12aa986b335609dba0a1c5694f"
-    sha256 x86_64_linux:  "f97f32a0e6dfeba393b36f02f2a22727c7c706e0dd54e8ba77b3b3e3a020eda8"
+    root_url "https://github.com/rfc1459/homebrew-personal/releases/download/x3270-x11-4.4ga6"
+    sha256 arm64_sequoia: "848b7a912d7646f828b7ba528854c0588bf68a26baa2ab092b20dc321cdccde2"
+    sha256 arm64_sonoma:  "cb07a1e7ba8c5c30044c8285efde0bad092785a4b01e037b37e38ec8cd36cba5"
+    sha256 ventura:       "5c9f11fc8a3ec0dd63c0bf219b701966b51162dd33a08570d8e43546a2aafe3d"
+    sha256 x86_64_linux:  "7088f49588e4642e182f9d2e21b172a7aa056132edea8408c161e732035c8bef"
   end
 
   depends_on "bdftopcf" => :build
