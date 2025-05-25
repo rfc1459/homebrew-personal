@@ -5,6 +5,14 @@ class Virtual1403 < Formula
   sha256 "35b2d0b0e46c2256fb498d431a6836f5c77b6b94fe9fd2b1cf887298f0b57d6a"
   license "GPL-3.0-or-later"
 
+  bottle do
+    root_url "https://github.com/rfc1459/homebrew-personal/releases/download/virtual1403-0.5.3"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "ad7f7190d1bc1e4a3d2a16f5d96731830b0d2afb1c5b5b70d52b7ff006bb1e20"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "8ffd931f976274ffe0de47b9e36384a823c7f5f6350674bbf39d65474bae0969"
+    sha256 cellar: :any_skip_relocation, ventura:       "1df518079c728997367bc5fb0c051c2d4f49402ac1d87ceb23cee99aaf9731dd"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "16c3cd4b9d9676d7bebba54ba363395d402ff661fb75277a6ee5ad76527530d3"
+  end
+
   depends_on "go" => :build
 
   def install
