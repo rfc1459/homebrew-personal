@@ -27,7 +27,7 @@ jobs:
       - name: Install X11 on macOS
         id: install-xquartz
         if: runner.os == 'macOS'
-        run: brew --cask install xquartz
+        run: brew install --cask xquartz
 
       - run: brew test-bot --only-cleanup-before
 
