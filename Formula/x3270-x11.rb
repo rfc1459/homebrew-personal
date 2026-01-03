@@ -33,17 +33,15 @@ class X3270X11 < Formula
   depends_on "libxt"
   depends_on "openssl@3"
   depends_on "readline"
-  depends_on "tcl-tk@8"
 
   uses_from_macos "python" => :build
   uses_from_macos "expat"
   uses_from_macos "ncurses"
+  uses_from_macos "tcl-tk"
 
   conflicts_with "x3270", because: "x3270-x11 also provides the same binaries as x3270"
 
   def install
-    ENV.append "CPPFLAGS", "-I#{Formula["tcl-tk@8"].opt_include}/tcl-tk"
-
     args = %w[
       --enable-c3270
       --enable-pr3287
