@@ -24,6 +24,11 @@ jobs:
           key: ${{ matrix.os }}-rubygems-${{ steps.set-up-homebrew.outputs.gems-hash }}
           restore-keys: ${{ matrix.os }}-rubygems-
 
+      - name: Install X11 on macOS
+        id: install-xquartz
+        if: runner.os == 'macOS'
+        run: brew --cask install xquartz
+
       - run: brew test-bot --only-cleanup-before
 
       - run: brew test-bot --only-setup
