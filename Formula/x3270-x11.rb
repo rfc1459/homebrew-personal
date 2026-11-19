@@ -4,6 +4,7 @@ class X3270X11 < Formula
   url "https://downloads.sourceforge.net/project/x3270/x3270/4.5ga5/suite3270-4.5ga5-src.tgz"
   sha256 "01576fa58598ccdd3d366febfaef61e3d1de93eb60a93f9ac6ba5faf84144c6f"
   license "BSD-3-Clause"
+  revision 1
 
   livecheck do
     url "https://x3270.miraheze.org/wiki/Downloads"
