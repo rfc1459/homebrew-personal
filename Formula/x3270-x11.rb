@@ -12,10 +12,8 @@ class X3270X11 < Formula
   end
 
   bottle do
-    root_url "https://github.com/rfc1459/homebrew-personal/releases/download/x3270-x11-4.5ga5"
-    sha256 arm64_tahoe:   "6d331968711adcb33575c78f34bdad41c2f3c03dbcafcf70eb0f196289fc8989"
-    sha256 arm64_sequoia: "3a2f9120b3ec10314cb1d4abc73caded0e111f2755ec007b9a56726d570f1c9c"
-    sha256 arm64_sonoma:  "94107798c2d0e145ee2246a0ad515acf33961f05535c622cb375fcbb799fd4d5"
+    root_url "https://github.com/rfc1459/homebrew-personal/releases/download/x3270-x11-4.5ga5_1"
+    sha256 arm64_golden_gate: "77af785c92fcb586c4e9266efa635322a156b254b0d7b50e31b31e6ddc10fd7a"
   end
 
   depends_on "bdftopcf" => :build
