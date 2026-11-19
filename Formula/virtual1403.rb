@@ -1,8 +1,8 @@
 class Virtual1403 < Formula
   desc "Emulate an IBM 1403 printer for use with Hercules"
   homepage "https://github.com/racingmars/virtual1403"
-  url "https://github.com/racingmars/virtual1403/archive/refs/tags/v0.5.3.tar.gz"
-  sha256 "35b2d0b0e46c2256fb498d431a6836f5c77b6b94fe9fd2b1cf887298f0b57d6a"
+  url "https://github.com/racingmars/virtual1403/archive/refs/tags/v0.5.5.tar.gz"
+  sha256 "03147dfb8597d89ddeb70f1fc5cb7184a91e67a92ac7a99ac5019ff375d759f3"
   license "GPL-3.0-or-later"
 
   bottle do
